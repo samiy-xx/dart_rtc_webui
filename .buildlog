@@ -1,0 +1,19 @@
+---
+build.dart --machine --changed=web\dart_chat.dart
+Unable to open file: C:/Users/lena/Documents/git/dart_rtc_webui/packages/meta/meta.dart'package:html5lib/dom.dart': Error: line 8 pos 1: library handler failed
+import 'package:meta/meta.dart';
+^
+'package:web_ui/src/compiler.dart': Error: line 9 pos 1: library handler failed
+import 'package:html5lib/dom.dart';
+^
+'package:web_ui/dwc.dart': Error: line 11 pos 1: library handler failed
+import 'src/compiler.dart';
+^
+'package:web_ui/component_build.dart': Error: line 26 pos 1: library handler failed
+import 'package:web_ui/dwc.dart' as dwc;
+^
+'file:///C:/Users/lena/Documents/git/dart_rtc_webui/build.dart': Error: line 2 pos 1: library handler failed
+import 'package:web_ui/component_build.dart';
+^
+build.dart finished [454 ms]
+
