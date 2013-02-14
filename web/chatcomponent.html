@@ -17,20 +17,20 @@
             <div id="chat_tabs">
                 <ul>
                   <template id="iterate_tabs" iterate="tab in tabs">
-                    <li on-click="onSetTabActive($event)">{{tab.name}}</li>
+                    <li on-click="onSetTabActive($event)" class="{{tab.cssclass}}">{{tab.name}}</li>
                   </template>
                 </ul>
                </div>
             <div id="chat_messages">
               <template if="cansend">
-              <template id="iterate_messages" iterate="message in messages[activetab]">
-                <div class="message_row">
-                  <span class="message_col message_time">[{{message.time}}]</span>
-                  <span class="message_col message_type">[{{message.messageType}}]</span>
-                  <span class="message_col message_username" on-double-click="onUserDoubleClick($event)">{{message.user}}</span>
-                  <span class="message_col message_message">{{message.message}}</span>
-                </div>
-              </template>
+                <template id="iterate_messages" iterate="message in messages[activetab]">
+                  <div class="message_row">
+                    <span class="message_col message_time">[{{message.time}}]</span>
+                    <span class="message_col message_type">[{{message.messageType}}]</span>
+                    <span class="message_col message_username" on-double-click="onUserDoubleClick($event)">{{message.user}}</span>
+                    <span class="message_col message_message">{{message.message}}</span>
+                  </div>
+                </template>
               </template>
             </div>
           </div>
@@ -78,7 +78,7 @@
         }
         
         #chat_messages {
-          height: 400px;
+          height: 370px;
           overflow:auto
         }
         
@@ -125,6 +125,7 @@
         #chat_tabs {
           background: #ddd;
         }
+        
         ul {
           list-style: none;
           padding:0;
@@ -137,13 +138,18 @@
           border-right: 1px solid #000;
           border-bottom: 1px solid #000;
           cursor: pointer;
-          padding: 5px;
+          
+          padding-right: 5px;
           text-align: center;
-          height: 30px;
+          
         }
         li:hover {
           background: #fff;
         }
+        .active {
+          background: #FF00FF;
+        }
+        
         .important {
           color: #FF0000;
         }

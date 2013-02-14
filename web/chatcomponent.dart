@@ -48,7 +48,6 @@ class ChatComponent extends WebComponent {
     new Logger().setLevel(LogLevel.WARN);
   }
 
-  /** Invoked when this component gets inserted in the DOM tree. */
   void inserted() {
     
     input = query("#chat_input");
@@ -70,19 +69,16 @@ class ChatComponent extends WebComponent {
         setEditable(true);
         dispatch();
       }
-      
-      
     });
     
     client.onSignalingOpenEvent.listen((SignalingOpenEvent e) {                                                         
       add("SYSTEM", createSystemMessage("Connected"));
-      
       dispatch();
     });
     
     client.onSignalingCloseEvent.listen((SignalingCloseEvent e) {
       print("Disconnected");
-      add("system", createSystemMessage("Disconnected"));
+      add("SYSTEM", createSystemMessage("Disconnected"));
       cansend = false;
       setEditable(false);
       dispatch();
@@ -154,17 +150,15 @@ class ChatComponent extends WebComponent {
     if (input.text == "")
       input.text = "/msg ${element.text} ";
     
-    //var userSelection = window.getSelection();
-    //Range range = userSelection.getRangeAt(0);
-    //range.setEnd(userSelection.focusNode, 5);
-    //print(range.endOffset);
   }
   
   void onSetTabActive(MouseEvent e) {
     Element el = e.target;
     activetab = el.text;
+    //tabs.where((Tab t) => t.name == activeTab).first.
     dispatch();
   }
+  
   /** Invoked when this component is removed from the DOM tree. */
   void removed() {
     print("Removed");
@@ -181,6 +175,7 @@ class ChatComponent extends WebComponent {
       input.classes.add(INPUT_UNEDITABLE);
     }
   }
+  
   bool tabExists(identifier) {
     return tabs.any((Tab t) => t.name == identifier);
   }
