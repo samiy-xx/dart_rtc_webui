@@ -1,0 +1,155 @@
+<html>
+  <body>
+    <element name="x-chatcomponent" constructor="ChatComponent" extends="div">
+      <template id="root_template">
+        
+        <div class="chat_container">
+          
+          <div class="container_right">
+            <div id="chat_users">
+              <template id="iterate_users" iterate="user in users">
+                <div class="user_entry" on-double-click="onUserDoubleClick($event)">{{user.name}}</div>
+              </template>
+            </div>
+          </div>
+          
+          <div class="container_left">
+            <div id="chat_tabs">
+                <ul>
+                  <template id="iterate_tabs" iterate="tab in tabs">
+                    <li on-click="onSetTabActive($event)">{{tab.name}}</li>
+                  </template>
+                </ul>
+               </div>
+            <div id="chat_messages">
+              <template if="cansend">
+              <template id="iterate_messages" iterate="message in messages[activetab]">
+                <div class="message_row">
+                  <span class="message_col message_time">[{{message.time}}]</span>
+                  <span class="message_col message_type">[{{message.messageType}}]</span>
+                  <span class="message_col message_username" on-double-click="onUserDoubleClick($event)">{{message.user}}</span>
+                  <span class="message_col message_message">{{message.message}}</span>
+                </div>
+              </template>
+              </template>
+            </div>
+          </div>
+        </div>
+        
+        <div id="chat_input" on-key-down="onInputKeyDown($event)"></div>
+        
+        <style>
+        .chat_container {
+          height: auto;
+          overflow: hidden;
+          border: 1px solid #000;
+          -moz-box-shadow:0px 0px 10px 3px #777777;
+          -webkit-box-shadow:0px 0px 10px 3px #777777;
+          box-shadow:0px 0px 10px 3px #777777;
+          -webkit-border-radius: 5px; /* for safari */
+          -moz-border-raidus: 5px; /* for firefox < 4 */
+          border-radius: 5px; /* for all other that support it */
+        }
+        
+        .container_left {
+          width: auto;
+          overflow: hidden;
+        }
+        
+        .container_right { 
+          float: right;
+          width: 200px;
+          border-left: 1px solid #000;
+        }
+        
+        #chat_users {
+          height: 400px;
+          padding: 3px;
+          overflow:auto
+        }
+        
+        .user_entry {
+          cursor : pointer;
+          background: #fff;
+        }
+        
+        .user_entry:hover {
+          background: #ddd;
+        }
+        
+        #chat_messages {
+          height: 400px;
+          overflow:auto
+        }
+        
+        #chat_input {
+          border: 1px solid #000;
+          height:20px;
+          margin-top: 5px;
+          -moz-box-shadow:0px 0px 10px 3px #777777;
+          -webkit-box-shadow:0px 0px 10px 3px #777777;
+          box-shadow:0px 0px 10px 3px #777777;
+        }
+        
+        .input_editable {
+          background: #FFFFFF;
+        }
+        
+        .input_uneditable {
+          background: #DDDDDD;
+        }
+        
+        .message_row {
+          margin-bottom: 2px;
+          background: #eee;
+        }
+        
+        .message_col {
+          margin-left: 3px;
+        }
+        
+        .message_time {
+          font-weight: bold;
+        }
+        
+        .message_type {
+          font-weight: bold;
+        }
+        
+        .message_username {
+          font-weight: bold;
+          color: blue;
+          cursor : pointer;
+        }
+        
+        #chat_tabs {
+          background: #ddd;
+        }
+        ul {
+          list-style: none;
+          padding:0;
+          margin:0;
+        }
+        
+        li {
+          background: #ddd;
+          display: inline;
+          border-right: 1px solid #000;
+          border-bottom: 1px solid #000;
+          cursor: pointer;
+          padding: 5px;
+          text-align: center;
+          height: 30px;
+        }
+        li:hover {
+          background: #fff;
+        }
+        .important {
+          color: #FF0000;
+        }
+      </style>
+      </template>
+      <script type="application/dart" src="chatcomponent.dart"></script>
+    </element>
+  </body>
+</html>

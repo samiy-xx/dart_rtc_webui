@@ -17,3 +17,1177 @@ import 'package:web_ui/component_build.dart';
 ^
 build.dart finished [454 ms]
 
+---
+build.dart --machine --changed=web\dart_chat.dart
+Unable to open file: C:/Users/lena/Documents/git/dart_rtc_webui/packages/meta/meta.dart'package:html5lib/dom.dart': Error: line 8 pos 1: library handler failed
+import 'package:meta/meta.dart';
+^
+'package:web_ui/src/compiler.dart': Error: line 9 pos 1: library handler failed
+import 'package:html5lib/dom.dart';
+^
+'package:web_ui/dwc.dart': Error: line 11 pos 1: library handler failed
+import 'src/compiler.dart';
+^
+'package:web_ui/component_build.dart': Error: line 26 pos 1: library handler failed
+import 'package:web_ui/dwc.dart' as dwc;
+^
+'file:///C:/Users/lena/Documents/git/dart_rtc_webui/build.dart': Error: line 2 pos 1: library handler failed
+import 'package:web_ui/component_build.dart';
+^
+build.dart finished [491 ms]
+
+---
+build.dart --machine --changed=web\dart_chat.html
+Unable to open file: C:/Users/lena/Documents/git/dart_rtc_webui/packages/meta/meta.dart'package:html5lib/dom.dart': Error: line 8 pos 1: library handler failed
+import 'package:meta/meta.dart';
+^
+'package:web_ui/src/compiler.dart': Error: line 9 pos 1: library handler failed
+import 'package:html5lib/dom.dart';
+^
+'package:web_ui/dwc.dart': Error: line 11 pos 1: library handler failed
+import 'src/compiler.dart';
+^
+'package:web_ui/component_build.dart': Error: line 26 pos 1: library handler failed
+import 'package:web_ui/dwc.dart' as dwc;
+^
+'file:///C:/Users/lena/Documents/git/dart_rtc_webui/build.dart': Error: line 2 pos 1: library handler failed
+import 'package:web_ui/component_build.dart';
+^
+build.dart finished [271 ms]
+
+---
+build.dart --machine --changed=web\dart_chat.html
+Unable to open file: C:/Users/lena/Documents/git/dart_rtc_webui/packages/meta/meta.dart'package:html5lib/dom.dart': Error: line 8 pos 1: library handler failed
+import 'package:meta/meta.dart';
+^
+'package:web_ui/src/compiler.dart': Error: line 9 pos 1: library handler failed
+import 'package:html5lib/dom.dart';
+^
+'package:web_ui/dwc.dart': Error: line 11 pos 1: library handler failed
+import 'src/compiler.dart';
+^
+'package:web_ui/component_build.dart': Error: line 26 pos 1: library handler failed
+import 'package:web_ui/dwc.dart' as dwc;
+^
+'file:///C:/Users/lena/Documents/git/dart_rtc_webui/build.dart': Error: line 2 pos 1: library handler failed
+import 'package:web_ui/component_build.dart';
+^
+build.dart finished [313 ms]
+
+---
+build.dart --machine --changed=web\chatconnector.dart
+Unable to open file: C:/Users/lena/Documents/git/dart_rtc_webui/packages/meta/meta.dart'package:html5lib/dom.dart': Error: line 8 pos 1: library handler failed
+import 'package:meta/meta.dart';
+^
+'package:web_ui/src/compiler.dart': Error: line 9 pos 1: library handler failed
+import 'package:html5lib/dom.dart';
+^
+'package:web_ui/dwc.dart': Error: line 11 pos 1: library handler failed
+import 'src/compiler.dart';
+^
+'package:web_ui/component_build.dart': Error: line 26 pos 1: library handler failed
+import 'package:web_ui/dwc.dart' as dwc;
+^
+'file:///C:/Users/lena/Documents/git/dart_rtc_webui/build.dart': Error: line 2 pos 1: library handler failed
+import 'package:web_ui/component_build.dart';
+^
+build.dart finished [132 ms]
+
+---
+build.dart --machine --changed=web\chatconnector.dart
+Unable to open file: C:/Users/lena/Documents/git/dart_rtc_webui/packages/meta/meta.dart'package:html5lib/dom.dart': Error: line 8 pos 1: library handler failed
+import 'package:meta/meta.dart';
+^
+'package:web_ui/src/compiler.dart': Error: line 9 pos 1: library handler failed
+import 'package:html5lib/dom.dart';
+^
+'package:web_ui/dwc.dart': Error: line 11 pos 1: library handler failed
+import 'src/compiler.dart';
+^
+'package:web_ui/component_build.dart': Error: line 26 pos 1: library handler failed
+import 'package:web_ui/dwc.dart' as dwc;
+^
+'file:///C:/Users/lena/Documents/git/dart_rtc_webui/build.dart': Error: line 2 pos 1: library handler failed
+import 'package:web_ui/component_build.dart';
+^
+build.dart finished [379 ms]
+
+---
+build.dart --machine --changed=web\chatconnector.dart
+Unable to open file: C:/Users/lena/Documents/git/dart_rtc_webui/packages/meta/meta.dart'package:html5lib/dom.dart': Error: line 8 pos 1: library handler failed
+import 'package:meta/meta.dart';
+^
+'package:web_ui/src/compiler.dart': Error: line 9 pos 1: library handler failed
+import 'package:html5lib/dom.dart';
+^
+'package:web_ui/dwc.dart': Error: line 11 pos 1: library handler failed
+import 'src/compiler.dart';
+^
+'package:web_ui/component_build.dart': Error: line 26 pos 1: library handler failed
+import 'package:web_ui/dwc.dart' as dwc;
+^
+'file:///C:/Users/lena/Documents/git/dart_rtc_webui/build.dart': Error: line 2 pos 1: library handler failed
+import 'package:web_ui/component_build.dart';
+^
+build.dart finished [575 ms]
+
+---
+build.dart --machine --changed=chat.dart
+Unable to open file: C:/Users/lena/Documents/git/dart_rtc_webui/packages/meta/meta.dart'package:html5lib/dom.dart': Error: line 8 pos 1: library handler failed
+import 'package:meta/meta.dart';
+^
+'package:web_ui/src/compiler.dart': Error: line 9 pos 1: library handler failed
+import 'package:html5lib/dom.dart';
+^
+'package:web_ui/dwc.dart': Error: line 11 pos 1: library handler failed
+import 'src/compiler.dart';
+^
+'package:web_ui/component_build.dart': Error: line 26 pos 1: library handler failed
+import 'package:web_ui/dwc.dart' as dwc;
+^
+'file:///C:/Users/lena/Documents/git/dart_rtc_webui/build.dart': Error: line 2 pos 1: library handler failed
+import 'package:web_ui/component_build.dart';
+^
+build.dart finished [400 ms]
+
+---
+build.dart --machine --removed=chat.dart
+Unable to open file: C:/Users/lena/Documents/git/dart_rtc_webui/packages/meta/meta.dart'package:html5lib/dom.dart': Error: line 8 pos 1: library handler failed
+import 'package:meta/meta.dart';
+^
+'package:web_ui/src/compiler.dart': Error: line 9 pos 1: library handler failed
+import 'package:html5lib/dom.dart';
+^
+'package:web_ui/dwc.dart': Error: line 11 pos 1: library handler failed
+import 'src/compiler.dart';
+^
+'package:web_ui/component_build.dart': Error: line 26 pos 1: library handler failed
+import 'package:web_ui/dwc.dart' as dwc;
+^
+'file:///C:/Users/lena/Documents/git/dart_rtc_webui/build.dart': Error: line 2 pos 1: library handler failed
+import 'package:web_ui/component_build.dart';
+^
+build.dart finished [319 ms]
+
+---
+build.dart --machine --changed=web\chat.html
+Unable to open file: C:/Users/lena/Documents/git/dart_rtc_webui/packages/meta/meta.dart'package:html5lib/dom.dart': Error: line 8 pos 1: library handler failed
+import 'package:meta/meta.dart';
+^
+'package:web_ui/src/compiler.dart': Error: line 9 pos 1: library handler failed
+import 'package:html5lib/dom.dart';
+^
+'package:web_ui/dwc.dart': Error: line 11 pos 1: library handler failed
+import 'src/compiler.dart';
+^
+'package:web_ui/component_build.dart': Error: line 26 pos 1: library handler failed
+import 'package:web_ui/dwc.dart' as dwc;
+^
+'file:///C:/Users/lena/Documents/git/dart_rtc_webui/build.dart': Error: line 2 pos 1: library handler failed
+import 'package:web_ui/component_build.dart';
+^
+build.dart finished [247 ms]
+
+---
+build.dart --machine --changed=web\dart_chat.html
+Unable to open file: C:/Users/lena/Documents/git/dart_rtc_webui/packages/meta/meta.dart'package:html5lib/dom.dart': Error: line 8 pos 1: library handler failed
+import 'package:meta/meta.dart';
+^
+'package:web_ui/src/compiler.dart': Error: line 9 pos 1: library handler failed
+import 'package:html5lib/dom.dart';
+^
+'package:web_ui/dwc.dart': Error: line 11 pos 1: library handler failed
+import 'src/compiler.dart';
+^
+'package:web_ui/component_build.dart': Error: line 26 pos 1: library handler failed
+import 'package:web_ui/dwc.dart' as dwc;
+^
+'file:///C:/Users/lena/Documents/git/dart_rtc_webui/build.dart': Error: line 2 pos 1: library handler failed
+import 'package:web_ui/component_build.dart';
+^
+build.dart finished [150 ms]
+
+---
+build.dart --machine --changed=web\chatconnector.html --removed=web\dart_chat.html
+Unable to open file: C:/Users/lena/Documents/git/dart_rtc_webui/packages/meta/meta.dart'package:html5lib/dom.dart': Error: line 8 pos 1: library handler failed
+import 'package:meta/meta.dart';
+^
+'package:web_ui/src/compiler.dart': Error: line 9 pos 1: library handler failed
+import 'package:html5lib/dom.dart';
+^
+'package:web_ui/dwc.dart': Error: line 11 pos 1: library handler failed
+import 'src/compiler.dart';
+^
+'package:web_ui/component_build.dart': Error: line 26 pos 1: library handler failed
+import 'package:web_ui/dwc.dart' as dwc;
+^
+'file:///C:/Users/lena/Documents/git/dart_rtc_webui/build.dart': Error: line 2 pos 1: library handler failed
+import 'package:web_ui/component_build.dart';
+^
+build.dart finished [136 ms]
+
+---
+build.dart --machine --changed=web\dart_chat.html --removed=web\chat.html
+Unable to open file: C:/Users/lena/Documents/git/dart_rtc_webui/packages/meta/meta.dart'package:html5lib/dom.dart': Error: line 8 pos 1: library handler failed
+import 'package:meta/meta.dart';
+^
+'package:web_ui/src/compiler.dart': Error: line 9 pos 1: library handler failed
+import 'package:html5lib/dom.dart';
+^
+'package:web_ui/dwc.dart': Error: line 11 pos 1: library handler failed
+import 'src/compiler.dart';
+^
+'package:web_ui/component_build.dart': Error: line 26 pos 1: library handler failed
+import 'package:web_ui/dwc.dart' as dwc;
+^
+'file:///C:/Users/lena/Documents/git/dart_rtc_webui/build.dart': Error: line 2 pos 1: library handler failed
+import 'package:web_ui/component_build.dart';
+^
+build.dart finished [172 ms]
+
+---
+build.dart --machine --changed=web\dart_chat.html
+Unable to open file: C:/Users/lena/Documents/git/dart_rtc_webui/packages/meta/meta.dart'package:html5lib/dom.dart': Error: line 8 pos 1: library handler failed
+import 'package:meta/meta.dart';
+^
+'package:web_ui/src/compiler.dart': Error: line 9 pos 1: library handler failed
+import 'package:html5lib/dom.dart';
+^
+'package:web_ui/dwc.dart': Error: line 11 pos 1: library handler failed
+import 'src/compiler.dart';
+^
+'package:web_ui/component_build.dart': Error: line 26 pos 1: library handler failed
+import 'package:web_ui/dwc.dart' as dwc;
+^
+'file:///C:/Users/lena/Documents/git/dart_rtc_webui/build.dart': Error: line 2 pos 1: library handler failed
+import 'package:web_ui/component_build.dart';
+^
+build.dart finished [644 ms]
+
+---
+build.dart --machine --changed=pubspec.lock
+
+build.dart finished [232 ms]
+
+---
+build.dart --machine --changed=web\dart_chat.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/dart_chat.html","message":"custom element with tag name x-rtc-chat not found.","line":9,"charStart":85,"charEnd":125}}]
+Total time spent on web/dart_chat.html                       -- 202 ms
+build.dart finished [477 ms]
+
+---
+build.dart --machine --changed=web\out\dart_chat.dart --changed=web\out\dart_chat.html --changed=web\out\dart_c...
+
+build.dart finished [261 ms]
+
+---
+build.dart --machine --changed=web\out\dart_chat.dart
+
+build.dart finished [472 ms]
+
+---
+build.dart --machine --changed=web\out\dart_chat.html --changed=web\out\dart_chat.html_bootstrap.dart
+
+build.dart finished [404 ms]
+
+---
+build.dart --machine --changed=web\dart_chat.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatconnector.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Total time spent on web/dart_chat.html                       -- 229 ms
+build.dart finished [596 ms]
+
+---
+build.dart --machine --changed=web\out\chatconnector.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [474 ms]
+
+---
+build.dart --machine --changed=web\out\dart_chat.html
+
+build.dart finished [306 ms]
+
+---
+build.dart --machine --changed=web\out\chatconnector.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [460 ms]
+
+---
+build.dart --machine --changed=web\chatconnector.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatconnector.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":3,"charStart":2,"charEnd":8}}]
+Total time spent on web/dart_chat.html                       -- 235 ms
+build.dart finished [749 ms]
+
+---
+build.dart --machine --changed=web\out\chatconnector.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [507 ms]
+
+---
+build.dart --machine --changed=web\chatconnector.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 223 ms
+build.dart finished [507 ms]
+
+---
+build.dart --machine --changed=web\out\chatconnector.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [422 ms]
+
+---
+build.dart --machine --changed=web\out\dart_chat.html
+
+build.dart finished [556 ms]
+
+---
+build.dart --machine --changed=web\out\chatconnector.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [319 ms]
+
+---
+build.dart --machine --changed=web\dart_chat.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 227 ms
+build.dart finished [521 ms]
+
+---
+build.dart --machine --changed=web\out\chatconnector.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [379 ms]
+
+---
+build.dart --machine --changed=web\chatconnector.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 204 ms
+build.dart finished [632 ms]
+
+---
+build.dart --machine --changed=web\out\chatconnector.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [280 ms]
+
+---
+build.dart --machine --changed=web\chatconnector.dart --changed=web\dart_chat.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 349 ms
+build.dart finished [941 ms]
+
+---
+build.dart --machine --changed=web\out\chatconnector.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [279 ms]
+
+---
+build.dart --machine --changed=web\chatconnector.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 296 ms
+build.dart finished [723 ms]
+
+---
+build.dart --machine --changed=web\out\chatconnector.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [313 ms]
+
+---
+build.dart --machine --changed=web\chatconnector.dart --changed=web\dart_chat.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 994 ms
+build.dart finished [1789 ms]
+
+---
+build.dart --machine --changed=web\out\chatconnector.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [1305 ms]
+
+---
+build.dart --machine --changed=web\chatconnector.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 737 ms
+build.dart finished [2215 ms]
+
+---
+build.dart --machine --changed=web\out\chatconnector.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [632 ms]
+
+---
+build.dart --machine --full
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 174 ms
+build.dart finished [389 ms]
+
+---
+build.dart --machine --changed=web\out\chatconnector.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [302 ms]
+
+---
+build.dart --machine --changed=web\chatconnector.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 205 ms
+build.dart finished [483 ms]
+
+---
+build.dart --machine --changed=web\out\chatconnector.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [332 ms]
+
+---
+build.dart --machine --changed=web\chatconnector.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatconnector.html","message":"Unexpected character after attribute value.","line":6,"charStart":119,"charEnd":266}}]
+[{"method":"warning","params":{"file":"web/chatconnector.html","message":"Invalid character in attribute name","line":6,"charStart":119,"charEnd":270}}]
+[{"method":"warning","params":{"file":"web/chatconnector.html","message":"template attribute is required when using if, instantiate, or iterate attributes.","line":6,"charStart":119,"charEnd":271}}]
+Total time spent on web/dart_chat.html                       -- 202 ms
+build.dart finished [503 ms]
+
+---
+build.dart --machine --changed=web\out\chatconnector.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [315 ms]
+
+---
+build.dart --machine --changed=web\chatconnector.dart --changed=web\chatconnector.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatconnector.html","message":"template attribute is required when using if, instantiate, or iterate attributes.","line":6,"charStart":119,"charEnd":204}}]
+Total time spent on web/dart_chat.html                       -- 205 ms
+build.dart finished [921 ms]
+
+---
+build.dart --machine --changed=web\out\chatconnector.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [264 ms]
+
+---
+build.dart --machine --changed=web\chatconnector.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 229 ms
+build.dart finished [567 ms]
+
+---
+build.dart --machine --changed=web\out\chatconnector.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [293 ms]
+
+---
+build.dart --machine --changed=web\chatconnector.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatconnector.html","message":"an <element> should have exactly one <template> child","line":4,"charStart":32,"charEnd":101}}]
+Total time spent on web/dart_chat.html                       -- 215 ms
+build.dart finished [813 ms]
+
+---
+build.dart --machine --changed=web\out\chatconnector.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [288 ms]
+
+---
+build.dart --machine --changed=web\chatconnector.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 288 ms
+build.dart finished [605 ms]
+
+---
+build.dart --machine --changed=web\out\chatconnector.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [222 ms]
+
+---
+build.dart --machine --changed=web\dart_chat.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 265 ms
+build.dart finished [972 ms]
+
+---
+build.dart --machine --changed=web\out\chatconnector.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [297 ms]
+
+---
+build.dart --machine --changed=web\chatconnector.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 342 ms
+build.dart finished [615 ms]
+
+---
+build.dart --machine --changed=web\out\chatconnector.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [372 ms]
+
+---
+build.dart --machine --changed=web\chatconnector.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 264 ms
+build.dart finished [1012 ms]
+
+---
+build.dart --machine --changed=web\out\chatconnector.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [1528 ms]
+
+---
+build.dart --machine --changed=web\chatconnector.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 652 ms
+build.dart finished [1024 ms]
+
+---
+build.dart --machine --changed=web\out\chatconnector.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [306 ms]
+
+---
+build.dart --machine --changed=web\chatconnector.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 561 ms
+build.dart finished [1244 ms]
+
+---
+build.dart --machine --changed=web\out\chatconnector.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [407 ms]
+
+---
+build.dart --machine --changed=web\chatconnector.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 453 ms
+build.dart finished [1309 ms]
+
+---
+build.dart --machine --changed=web\out\chatconnector.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [267 ms]
+
+---
+build.dart --machine --changed=web\chatconnector.dart --changed=web\chatconnector.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 567 ms
+build.dart finished [1516 ms]
+
+---
+build.dart --machine --changed=web\out\chatconnector.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [443 ms]
+
+---
+build.dart --machine --changed=web\chatconnector.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 792 ms
+build.dart finished [1591 ms]
+
+---
+build.dart --machine --changed=web\out\chatconnector.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [259 ms]
+
+---
+build.dart --machine --changed=web\chatconnector.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatconnector.html","message":"an <element> should have exactly one <template> child","line":4,"charStart":32,"charEnd":101}}]
+Total time spent on web/dart_chat.html                       -- 304 ms
+build.dart finished [743 ms]
+
+---
+build.dart --machine --changed=web\out\chatconnector.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [272 ms]
+
+---
+build.dart --machine --changed=web\chatconnector.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatconnector.html","message":"an <element> should have exactly one <template> child","line":4,"charStart":32,"charEnd":101}}]
+Total time spent on web/dart_chat.html                       -- 217 ms
+build.dart finished [723 ms]
+
+---
+build.dart --machine --changed=web\out\chatconnector.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [219 ms]
+
+---
+build.dart --machine --changed=web\chatconnector.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 197 ms
+build.dart finished [473 ms]
+
+---
+build.dart --machine --changed=web\out\chatconnector.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [269 ms]
+
+---
+build.dart --machine --changed=web\chatconnector.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 198 ms
+build.dart finished [519 ms]
+
+---
+build.dart --machine --changed=web\out\chatconnector.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [323 ms]
+
+---
+build.dart --machine --changed=web\chatconnector.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatconnector.html","message":"an <element> should have exactly one <template> child","line":5,"charStart":35,"charEnd":104}}]
+Total time spent on web/dart_chat.html                       -- 349 ms
+build.dart finished [648 ms]
+
+---
+build.dart --machine --changed=web\out\chatconnector.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [320 ms]
+
+---
+build.dart --machine --changed=web\chatconnector.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatconnector.html","message":"an <element> should have exactly one <template> child","line":5,"charStart":35,"charEnd":104}}]
+Total time spent on web/dart_chat.html                       -- 230 ms
+build.dart finished [567 ms]
+
+---
+build.dart --machine --changed=web\out\chatconnector.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [364 ms]
+
+---
+build.dart --machine --removed=web\out\chatconnector.dart --removed=web\out\dart_chat.dart --removed=web\out\da...
+
+build.dart finished [398 ms]
+
+---
+build.dart --machine --removed=web\chatconnector.dart --removed=web\chatconnector.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"error","params":{"file":"web/chatconnector.html","message":"exception while reading file, original message:\n AsyncError: 'FileIOException: Cannot open file 'web/chatconnector.html' (OS Error: The system cannot find the file specified.\r\n, errno = 2)'\nStack trace:\n#0      _File.open.<anonymous closure> (dart:io:1194:9)\n#1      _ThenFuture._sendValue (dart:async:406:24)\n\n","line":1}}]
+[{"method":"warning","params":{"file":"web/dart_chat.html","message":"custom element with tag name x-rtc-chat not found.","line":10,"charStart":139,"charEnd":212}}]
+Uncaught Error: NoSuchMethodError : method not found: 'call'
+Receiver: false
+Arguments: []
+Stack Trace:
+#0      Object.noSuchMethod (dart:core-patch:1746:25)
+#1      PathInfo.transformUrl (package:web_ui/src/info.dart:137:46)
+#2      MainPageEmitter.run.<anonymous closure> (package:web_ui/src/emitters.dart:401:53)
+#3      List.forEach (dart:core-patch:1109:8)
+#4      MainPageEmitter.run (package:web_ui/src/emitters.dart:396:40)
+#5      Compiler._emitMainDart (package:web_ui/src/compiler.dart:228:53)
+#6      Compiler._emit.<anonymous closure> (package:web_ui/src/compiler.dart:218:24)
+#7      time (package:web_ui/src/utils.dart:38:24)
+#8      Compiler._time (package:web_ui/src/compiler.dart:291:16)
+#9      Compiler._emit (package:web_ui/src/compiler.dart:213:12)
+#10     Compiler.run.<anonymous closure> (package:web_ui/src/compiler.dart:102:12)
+#11     _ThenFuture._sendValue (dart:async:406:24)
+
+
+Unhandled exception:
+NoSuchMethodError : method not found: 'call'
+Receiver: false
+Arguments: []
+#0      _FutureImpl._scheduleUnhandledError.<anonymous closure> (dart:async:334:9)
+#1      Timer.Timer.<anonymous closure> (dart:async-patch:11:15)
+#2      _Timer._createTimerHandler._handleTimeout (dart:io:7240:28)
+#3      _Timer._createTimerHandler._handleTimeout (dart:io:7248:7)
+#4      _Timer._createTimerHandler.<anonymous closure> (dart:io:7256:23)
+#5      _ReceivePortImpl._handleMessage (dart:isolate-patch:40:92)
+build.dart finished [1177 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.dart --changed=web\chatcomponent.html --changed=web\chatmessag...
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"error","params":{"file":"web/chatconnector.html","message":"exception while reading file, original message:\n AsyncError: 'FileIOException: Cannot open file 'web/chatconnector.html' (OS Error: The system cannot find the file specified.\r\n, errno = 2)'\nStack trace:\n#0      _File.open.<anonymous closure> (dart:io:1194:9)\n#1      _ThenFuture._sendValue (dart:async:406:24)\n\n","line":1}}]
+[{"method":"warning","params":{"file":"web/dart_chat.html","message":"custom element with tag name x-rtc-chat not found.","line":10,"charStart":139,"charEnd":212}}]
+Uncaught Error: NoSuchMethodError : method not found: 'call'
+Receiver: false
+Arguments: []
+Stack Trace:
+#0      Object.noSuchMethod (dart:core-patch:1746:25)
+#1      PathInfo.transformUrl (package:web_ui/src/info.dart:137:46)
+#2      MainPageEmitter.run.<anonymous closure> (package:web_ui/src/emitters.dart:401:53)
+#3      List.forEach (dart:core-patch:1109:8)
+#4      MainPageEmitter.run (package:web_ui/src/emitters.dart:396:40)
+#5      Compiler._emitMainDart (package:web_ui/src/compiler.dart:228:53)
+#6      Compiler._emit.<anonymous closure> (package:web_ui/src/compiler.dart:218:24)
+#7      time (package:web_ui/src/utils.dart:38:24)
+#8      Compiler._time (package:web_ui/src/compiler.dart:291:16)
+#9      Compiler._emit (package:web_ui/src/compiler.dart:213:12)
+#10     Compiler.run.<anonymous closure> (package:web_ui/src/compiler.dart:102:12)
+#11     _ThenFuture._sendValue (dart:async:406:24)
+
+
+Unhandled exception:
+NoSuchMethodError : method not found: 'call'
+Receiver: false
+Arguments: []
+#0      _FutureImpl._scheduleUnhandledError.<anonymous closure> (dart:async:334:9)
+#1      Timer.Timer.<anonymous closure> (dart:async-patch:11:15)
+#2      _Timer._createTimerHandler._handleTimeout (dart:io:7240:28)
+#3      _Timer._createTimerHandler._handleTimeout (dart:io:7248:7)
+#4      _Timer._createTimerHandler.<anonymous closure> (dart:io:7256:23)
+#5      _ReceivePortImpl._handleMessage (dart:isolate-patch:40:92)
+build.dart finished [735 ms]
+
+---
+build.dart --machine --changed=web\dart_chat.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatcomponent.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Uncaught Error: NoSuchMethodError : method not found: 'call'
+Receiver: false
+Arguments: []
+Stack Trace:
+#0      Object.noSuchMethod (dart:core-patch:1746:25)
+#1      PathInfo.transformUrl (package:web_ui/src/info.dart:137:46)
+#2      MainPageEmitter.run.<anonymous closure> (package:web_ui/src/emitters.dart:401:53)
+#3      List.forEach (dart:core-patch:1109:8)
+#4      MainPageEmitter.run (package:web_ui/src/emitters.dart:396:40)
+#5      Compiler._emitMainDart (package:web_ui/src/compiler.dart:228:53)
+#6      Compiler._emit.<anonymous closure> (package:web_ui/src/compiler.dart:218:24)
+#7      time (package:web_ui/src/utils.dart:38:24)
+#8      Compiler._time (package:web_ui/src/compiler.dart:291:16)
+#9      Compiler._emit (package:web_ui/src/compiler.dart:213:12)
+#10     Compiler.run.<anonymous closure> (package:web_ui/src/compiler.dart:102:12)
+#11     _ThenFuture._sendValue (dart:async:406:24)
+
+
+Unhandled exception:
+NoSuchMethodError : method not found: 'call'
+Receiver: false
+Arguments: []
+#0      _FutureImpl._scheduleUnhandledError.<anonymous closure> (dart:async:334:9)
+#1      Timer.Timer.<anonymous closure> (dart:async-patch:11:15)
+#2      _Timer._createTimerHandler._handleTimeout (dart:io:7240:28)
+#3      _Timer._createTimerHandler._handleTimeout (dart:io:7248:7)
+#4      _Timer._createTimerHandler.<anonymous closure> (dart:io:7256:23)
+#5      _ReceivePortImpl._handleMessage (dart:isolate-patch:40:92)
+build.dart finished [1255 ms]
+
+---
+build.dart --machine --changed=web\dart_chat.css
+
+build.dart finished [250 ms]
+
+---
+build.dart --machine --changed=web\dart_chat.css
+
+build.dart finished [214 ms]
+
+---
+build.dart --machine --changed=web\dart_chat.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatcomponent.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Uncaught Error: NoSuchMethodError : method not found: 'call'
+Receiver: false
+Arguments: []
+Stack Trace:
+#0      Object.noSuchMethod (dart:core-patch:1746:25)
+#1      PathInfo.transformUrl (package:web_ui/src/info.dart:137:46)
+#2      MainPageEmitter.run.<anonymous closure> (package:web_ui/src/emitters.dart:401:53)
+#3      List.forEach (dart:core-patch:1109:8)
+#4      MainPageEmitter.run (package:web_ui/src/emitters.dart:396:40)
+#5      Compiler._emitMainDart (package:web_ui/src/compiler.dart:228:53)
+#6      Compiler._emit.<anonymous closure> (package:web_ui/src/compiler.dart:218:24)
+#7      time (package:web_ui/src/utils.dart:38:24)
+#8      Compiler._time (package:web_ui/src/compiler.dart:291:16)
+#9      Compiler._emit (package:web_ui/src/compiler.dart:213:12)
+#10     Compiler.run.<anonymous closure> (package:web_ui/src/compiler.dart:102:12)
+#11     _ThenFuture._sendValue (dart:async:406:24)
+
+
+Unhandled exception:
+NoSuchMethodError : method not found: 'call'
+Receiver: false
+Arguments: []
+#0      _FutureImpl._scheduleUnhandledError.<anonymous closure> (dart:async:334:9)
+#1      Timer.Timer.<anonymous closure> (dart:async-patch:11:15)
+#2      _Timer._createTimerHandler._handleTimeout (dart:io:7240:28)
+#3      _Timer._createTimerHandler._handleTimeout (dart:io:7248:7)
+#4      _Timer._createTimerHandler.<anonymous closure> (dart:io:7256:23)
+#5      _ReceivePortImpl._handleMessage (dart:isolate-patch:40:92)
+build.dart finished [1048 ms]
+
+---
+build.dart --machine --changed=pubspec.lock
+
+build.dart finished [203 ms]
+
+---
+build.dart --machine --changed=web\dart_chat.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatcomponent.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Uncaught Error: NoSuchMethodError : method not found: 'call'
+Receiver: false
+Arguments: []
+Stack Trace:
+#0      Object.noSuchMethod (dart:core-patch:1746:25)
+#1      PathInfo.transformUrl (package:web_ui/src/info.dart:137:46)
+#2      MainPageEmitter.run.<anonymous closure> (package:web_ui/src/emitters.dart:401:53)
+#3      List.forEach (dart:core-patch:1109:8)
+#4      MainPageEmitter.run (package:web_ui/src/emitters.dart:396:40)
+#5      Compiler._emitMainDart (package:web_ui/src/compiler.dart:228:53)
+#6      Compiler._emit.<anonymous closure> (package:web_ui/src/compiler.dart:218:24)
+#7      time (package:web_ui/src/utils.dart:38:24)
+#8      Compiler._time (package:web_ui/src/compiler.dart:291:16)
+#9      Compiler._emit (package:web_ui/src/compiler.dart:213:12)
+#10     Compiler.run.<anonymous closure> (package:web_ui/src/compiler.dart:102:12)
+#11     _ThenFuture._sendValue (dart:async:406:24)
+
+
+Unhandled exception:
+NoSuchMethodError : method not found: 'call'
+Receiver: false
+Arguments: []
+#0      _FutureImpl._scheduleUnhandledError.<anonymous closure> (dart:async:334:9)
+#1      Timer.Timer.<anonymous closure> (dart:async-patch:11:15)
+#2      _Timer._createTimerHandler._handleTimeout (dart:io:7240:28)
+#3      _Timer._createTimerHandler._handleTimeout (dart:io:7248:7)
+#4      _Timer._createTimerHandler.<anonymous closure> (dart:io:7256:23)
+#5      _ReceivePortImpl._handleMessage (dart:isolate-patch:40:92)
+build.dart finished [662 ms]
+
+---
+build.dart --machine --changed=web\out\dart_chat.html_bootstrap.dart
+
+build.dart finished [385 ms]
+
+---
+build.dart --machine --changed=web\out\dart_chat.html_bootstrap.dart
+
+build.dart finished [255 ms]
+
+---
+build.dart --machine --removed=web\out\dart_chat.html_bootstrap.dart
+
+build.dart finished [860 ms]
+
+---
+build.dart --machine --changed=pubspec.lock
+
+build.dart finished [439 ms]
+
+---
+build.dart --machine --changed=pubspec.lock
+
+build.dart finished [801 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatcomponent.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Uncaught Error: NoSuchMethodError : method not found: 'call'
+Receiver: false
+Arguments: []
+Stack Trace:
+#0      Object.noSuchMethod (dart:core-patch:1746:25)
+#1      PathInfo.transformUrl (package:web_ui/src/info.dart:137:46)
+#2      MainPageEmitter.run.<anonymous closure> (package:web_ui/src/emitters.dart:401:53)
+#3      List.forEach (dart:core-patch:1109:8)
+#4      MainPageEmitter.run (package:web_ui/src/emitters.dart:396:40)
+#5      Compiler._emitMainDart (package:web_ui/src/compiler.dart:228:53)
+#6      Compiler._emit.<anonymous closure> (package:web_ui/src/compiler.dart:218:24)
+#7      time (package:web_ui/src/utils.dart:38:24)
+#8      Compiler._time (package:web_ui/src/compiler.dart:291:16)
+#9      Compiler._emit (package:web_ui/src/compiler.dart:213:12)
+#10     Compiler.run.<anonymous closure> (package:web_ui/src/compiler.dart:102:12)
+#11     _ThenFuture._sendValue (dart:async:406:24)
+
+
+Unhandled exception:
+NoSuchMethodError : method not found: 'call'
+Receiver: false
+Arguments: []
+#0      _FutureImpl._scheduleUnhandledError.<anonymous closure> (dart:async:334:9)
+#1      Timer.Timer.<anonymous closure> (dart:async-patch:11:15)
+#2      _Timer._createTimerHandler._handleTimeout (dart:io:7240:28)
+#3      _Timer._createTimerHandler._handleTimeout (dart:io:7248:7)
+#4      _Timer._createTimerHandler.<anonymous closure> (dart:io:7256:23)
+#5      _ReceivePortImpl._handleMessage (dart:isolate-patch:40:92)
+build.dart finished [811 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatcomponent.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Total time spent on web/dart_chat.html                       -- 304 ms
+build.dart finished [588 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [267 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatcomponent.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Total time spent on web/dart_chat.html                       -- 289 ms
+build.dart finished [2828 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [501 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatcomponent.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Total time spent on web/dart_chat.html                       -- 369 ms
+build.dart finished [950 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [2382 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.dart --changed=web\chatcomponent.html --changed=web\out\chatco...
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatcomponent.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Total time spent on web/dart_chat.html                       -- 298 ms
+build.dart finished [1462 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [2484 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatcomponent.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Total time spent on web/dart_chat.html                       -- 273 ms
+build.dart finished [616 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [342 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatcomponent.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Total time spent on web/dart_chat.html                       -- 296 ms
+build.dart finished [598 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [797 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatcomponent.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Total time spent on web/dart_chat.html                       -- 428 ms
+build.dart finished [738 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [3537 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatcomponent.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Total time spent on web/dart_chat.html                       -- 227 ms
+build.dart finished [846 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [587 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.dart --changed=web\chatcomponent.html --changed=web\out\chatco...
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatcomponent.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Total time spent on web/dart_chat.html                       -- 369 ms
+build.dart finished [857 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [2038 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatcomponent.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Total time spent on web/dart_chat.html                       -- 298 ms
+build.dart finished [561 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [1625 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatcomponent.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Total time spent on web/dart_chat.html                       -- 269 ms
+build.dart finished [585 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [983 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatcomponent.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Total time spent on web/dart_chat.html                       -- 425 ms
+build.dart finished [729 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [691 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatcomponent.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Total time spent on web/dart_chat.html                       -- 346 ms
+build.dart finished [1299 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [2984 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatcomponent.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Total time spent on web/dart_chat.html                       -- 379 ms
+build.dart finished [671 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [1852 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatcomponent.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Total time spent on web/dart_chat.html                       -- 570 ms
+build.dart finished [4477 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [1106 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatcomponent.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Total time spent on web/dart_chat.html                       -- 341 ms
+build.dart finished [990 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [412 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatcomponent.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Total time spent on web/dart_chat.html                       -- 245 ms
+build.dart finished [879 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [486 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatcomponent.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Total time spent on web/dart_chat.html                       -- 527 ms
+build.dart finished [2800 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [526 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatcomponent.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Total time spent on web/dart_chat.html                       -- 224 ms
+build.dart finished [493 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [437 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatcomponent.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Total time spent on web/dart_chat.html                       -- 361 ms
+build.dart finished [1207 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [1467 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.dart --changed=web\chatcomponent.html --changed=web\out\chatco...
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatcomponent.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Total time spent on web/dart_chat.html                       -- 697 ms
+build.dart finished [1919 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [839 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatcomponent.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Total time spent on web/dart_chat.html                       -- 1078 ms
+build.dart finished [5995 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [322 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatcomponent.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Total time spent on web/dart_chat.html                       -- 355 ms
+build.dart finished [941 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [371 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatcomponent.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Total time spent on web/dart_chat.html                       -- 404 ms
+build.dart finished [4796 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [3770 ms]
+
