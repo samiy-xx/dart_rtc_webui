@@ -1328,3 +1328,108 @@ build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart
 
 build.dart finished [413 ms]
 
+---
+build.dart --machine --full
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatcomponent.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Total time spent on web/dart_chat.html                       --  97 ms
+build.dart finished [191 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [107 ms]
+
+---
+build.dart --machine --changed=pubspec.lock
+
+build.dart finished [98 ms]
+
+---
+build.dart --machine --changed=pubspec.lock
+
+build.dart finished [88 ms]
+
+---
+build.dart --machine --changed=pubspec.lock
+
+build.dart finished [92 ms]
+
+---
+build.dart --machine --changed=pubspec.lock
+
+build.dart finished [91 ms]
+
+---
+build.dart --machine --changed=pubspec.lock
+
+build.dart finished [107 ms]
+
+---
+build.dart --machine --changed=pubspec.lock
+
+build.dart finished [95 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatcomponent.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Total time spent on web/dart_chat.html                       --  98 ms
+build.dart finished [191 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [91 ms]
+
+---
+build.dart --machine --clean
+
+build.dart finished [98 ms]
+
+---
+build.dart --machine --full
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatcomponent.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Total time spent on web/dart_chat.html                       --  97 ms
+build.dart finished [188 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [644 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatcomponent.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Total time spent on web/dart_chat.html                       -- 112 ms
+build.dart finished [217 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [107 ms]
+
+---
+build.dart --machine --changed=pubspec.lock
+
+build.dart finished [90 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+[{"method":"warning","params":{"file":"web/chatcomponent.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Total time spent on web/dart_chat.html                       -- 104 ms
+build.dart finished [210 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [105 ms]
+
+---
+build.dart --machine --changed=pubspec.lock
+
+build.dart finished [99 ms]
+
