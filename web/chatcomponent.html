@@ -7,7 +7,7 @@
           
           <div class="container_right">
             <div id="chat_users">
-              <template id="iterate_users" iterate="user in users">
+              <template id="iterate_users" iterate="user in activeTab.users">
                 <div class="user_entry" on-double-click="onUserDoubleClick($event)">{{user.name}}</div>
               </template>
             </div>
@@ -23,7 +23,7 @@
                </div>
             <div id="chat_messages">
               <template if="cansend">
-                <template id="iterate_messages" iterate="message in messages[activetab]">
+                <template id="iterate_messages" iterate="message in activeTab.messages">
                   <div class="message_row">
                     <span class="message_col message_time">[{{message.time}}]</span>
                     <span class="message_col message_type">[{{message.messageType}}]</span>

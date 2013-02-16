@@ -13,9 +13,6 @@ part 'user.dart';
 part 'tabs.dart';
 
 class ChatComponent extends WebComponent {
-  Map<String, List<ChatMessage>> messages = new Map<String, List<ChatMessage>>();
-  //List<ChatMessage> messages = new List<ChatMessage>();
-  List<User> users = new List<User>();
   List<Tab> tabs = new List<Tab>();
   DivElement chat;
   DivElement input;
@@ -23,21 +20,24 @@ class ChatComponent extends WebComponent {
   String connectionstring = "";
   ChannelClient client;
   bool cansend = false;
-  String activetab = "SYSTEM";
+  //String activetab = "SYSTEM";
+  Tab activeTab;
   final String INPUT_EDITABLE = "input_editable";
   final String INPUT_UNEDITABLE = "input_uneditable";
   final int MESSAGE_LIMIT = 100;
   
-  void add(String identifier, ChatMessage m) {
-    if (!messages.containsKey(identifier))
-      messages[identifier] = new List<ChatMessage>();
-    
+  void add(String identifier, [ChatMessage m]) {
+    Tab t;
     if (!tabExists(identifier)) {
-      tabs.add(new Tab(identifier));
-      activetab = identifier;
+      t = new Tab(identifier);
+      tabs.add(t);
+      activeTab = t;
+    } else {
+      t = findTab(identifier);
     }
     
-    messages[identifier].add(m);
+    if (t != null && ?m)
+      t.messages.add(m);
     
     // Hihih.. hax?
     window.setTimeout(() {
@@ -46,11 +46,13 @@ class ChatComponent extends WebComponent {
   }
   
   void created() {
-    new Logger().setLevel(LogLevel.WARN);
+    Tab t = new Tab("SYSTEM");
+    tabs.add(t);
+    activeTab = t;
+    new Logger().setLevel(LogLevel.DEBUG);
   }
 
   void inserted() {
-    
     input = query("#chat_input");
     chat = query("#chat_messages");
     input.focus();
@@ -59,13 +61,16 @@ class ChatComponent extends WebComponent {
     .setChannel(channel)
     .setRequireAudio(false)
     .setRequireVideo(false)
-    .setRequireDataChannel(true);
+    .setRequireDataChannel(true)
+    .setAutoCreatePeer(false);
     
     client.onInitializationStateChangeEvent.listen((InitializationStateEvent e) {
+      
+      if (e.state == InitializationState.REMOTE_READY) {
+        client.joinChannel(channel);
+      }
+      
       if (e.state == InitializationState.CHANNEL_READY) {
-        //if (client.setChannelLimit(10))
-          //add("system", createSystemMessage("Setting channel limit"));
-        
         cansend = true;
         setEditable(true);
         dispatch();
@@ -92,29 +97,53 @@ class ChatComponent extends WebComponent {
       if (e.type == PacketType.CHANNELMESSAGE) {
         ChannelMessage cm = e.packet as ChannelMessage;
         add(cm.channelId, new ChatMessage(new DateTime.now(), MessageType.MESSAGE, cm.id, cm.message));
-      } else if (e.type == PacketType.CHANNEL) {
+      } 
+      else if (e.type == PacketType.CHANNEL) {
         ChannelPacket cp = e.packet as ChannelPacket;
         add(cp.channelId, createChannelMessage("Channel has ${cp.users} users and has a limit of ${cp.limit} concurrent users"));
-      } else if (e.type == PacketType.USERMESSAGE) {
+      }
+      else if (e.type == PacketType.USERMESSAGE) {
         UserMessage um = e.packet as UserMessage;
         add(um.id, new ChatMessage(new DateTime.now(), MessageType.PRIVATE, um.id, um.message));
-      } else if (e.type == PacketType.ID) {
-        
+      }
+      else if (e.type == PacketType.ID) {
         IdPacket id = e.packet as IdPacket;
-        users.add(new User(id.id));
-      } else if (e.type == PacketType.JOIN) {
+        print("find channel with id ${id.channelId}");
+        add(id.channelId);
+        Tab t = findTab(id.channelId);
+        if (t != null) {
+          t.users.add(new User(id.id));
+          print("Adding user ${id.id}");
+        }
+      }
+      else if (e.type == PacketType.JOIN) {
         
         JoinPacket join = e.packet as JoinPacket;
-        users.add(new User(join.id));
+        Tab t = findTab(join.channelId);
+        if (t != null)
+          t.users.add(new User(join.id));
         add(join.channelId, createChannelMessage("${join.id} joins the channel"));
-      } else if (e.type == PacketType.BYE) {
+      }
+      else if (e.type == PacketType.BYE) {
         ByePacket bye = e.packet as ByePacket;
-        add("bye", createChannelMessage("${bye.id} leaves the channel"));
-        for (int i = 0; i < users.length; i++) {
-          User u = users[i];
-          if (u.name == bye.id)
-            users.removeAt(i);
+        
+        for (int i = 0; i < tabs.length; i++) {
+          Tab t = tabs[i];
+          for (int j = 0; j < t.users.length; j++) {
+            User u = t.users[j];
+            if (u.name == bye.id) {
+              t.users.removeAt(j);
+              add(t.name, createChannelMessage("${bye.id} leaves the channel"));
+            }
+          }
+          
         }
+        
+        //for (int i = 0; i < users.length; i++) {
+        //  User u = users[i];
+        //  if (u.name == bye.id)
+        //    users.removeAt(i);
+        //}
       }
       dispatch();
     });
@@ -135,9 +164,9 @@ class ChatComponent extends WebComponent {
       ChatEntry entry = new ChatEntry(i.text);
       if (entry.isCommand)  {
         String command = entry.command;
-        add("me", new ChatMessage(new DateTime.now(), MessageType.MESSAGE, "me", "Issuing command $command"));
+        add(activeTab.name, new ChatMessage(new DateTime.now(), MessageType.MESSAGE, "me", "Issuing command $command"));
       } else {
-        add("me", new ChatMessage(new DateTime.now(), MessageType.MESSAGE, "me", entry.toString()));
+        add(activeTab.name, new ChatMessage(new DateTime.now(), MessageType.MESSAGE, "me", entry.toString()));
         client.sendChannelMessage(entry.toString());
       }
       i.text = "";
@@ -147,15 +176,21 @@ class ChatComponent extends WebComponent {
   void onUserDoubleClick(MouseEvent e) {
     input.focus();
     Element element = e.target;
+    String id = element.text;
+    
+    add(id);
+    if (client.peerManager.findWrapper(id) == null)
+      client.createPeerConnection(id);
     
     if (input.text == "")
       input.text = "/msg ${element.text} ";
-    
   }
   
   void onSetTabActive(MouseEvent e) {
     Element el = e.target;
-    activetab = el.text;
+    Tab t = findTab(el.text);
+    if (t != null)
+      activeTab = t;
     //tabs.where((Tab t) => t.name == activeTab).first.
     dispatch();
   }
@@ -163,7 +198,7 @@ class ChatComponent extends WebComponent {
   /** Invoked when this component is removed from the DOM tree. */
   void removed() {
     print("Removed");
-  }
+  } 
   
   void setEditable(bool b) {
     if (b) {
@@ -185,6 +220,15 @@ class ChatComponent extends WebComponent {
     Tab t = new Tab(name);
     tabs.add(t);
     return t;
+  }
+  
+  Tab findTab(String name) {
+    for (int i = 0; i < tabs.length; i++) {
+      Tab t = tabs[i];
+      if (t.name == name)
+        return t;
+    }
+    return null;
   }
   
   ChatMessage createChannelMessage(String m) {

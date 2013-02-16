@@ -1,5 +1,17 @@
 part of chatcomponent;
 
+abstract class ChatCommand {
+  
+}
+
+class NickCommand implements ChatCommand {
+  final String nick;
+  NickCommand(this.nick);
+}
+
+class PrivMsgCommand implements ChatCommand {
+  
+}
 class ChatMessage {
   DateTime time;
   MessageType messageType;
@@ -12,10 +24,10 @@ class ChatEntry {
   final String _e;
   
   bool get isCommand => _e.startsWith("/");
-  String get command => getCommand();
+  ChatCommand get command => getCommand();
   ChatEntry(this._e);
   
-  String getCommand() {
+  ChatCommand getCommand() {
     if (isCommand) {
       List<String> split = _e.split(" ");
       String first = split[0];
