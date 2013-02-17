@@ -1,8 +1,13 @@
-part of chatcomponent;
+part of components;
 
 class Tab {
   String name;
-  String cssclass;
+  
+  String get extraCss => _getExtraCss();
+  
+  bool isActive = false;
+  bool hasUnread = false;
+  
   List<ChatMessage> messages;
   List<User> users;
   
@@ -13,7 +18,22 @@ class Tab {
   }
   
   void setActive(bool b) {
-    cssclass = b ? "active" : "notactive";
+    isActive = b;
+  }
+  
+  void setHasUnread(bool b) {
+    hasUnread = b;
+  }
+  
+  String _getExtraCss() {
+    StringBuffer buf = new StringBuffer();
+    if (isActive)
+      buf.add("active ");
+    
+    if (hasUnread)
+      buf.add("important");
+      
+    return buf.toString();
   }
 }
 

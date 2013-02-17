@@ -1,4 +1,9 @@
+<!DOCTYPE html>
+
 <html>
+  <head>
+    <link rel="components" href="messageinput.html">
+  </head>
   <body>
     <element name="x-chatcomponent" constructor="ChatComponent" extends="div">
       <template id="root_template">
@@ -17,7 +22,7 @@
             <div id="chat_tabs">
                 <ul>
                   <template id="iterate_tabs" iterate="tab in tabs">
-                    <li on-click="onSetTabActive($event)" class="{{tab.cssclass}}">{{tab.name}}</li>
+                    <li on-click="onSetTabActive($event)" class="{{tab.extraCss}}">{{tab.name}}</li>
                   </template>
                 </ul>
                </div>
@@ -36,7 +41,7 @@
           </div>
         </div>
         
-        <div id="chat_input" on-key-down="onInputKeyDown($event)"></div>
+        <x-messageinput id="chat_input" on-key-down="onInputKeyDown($event)"></x-messageinput>
         
         <style>
         .chat_container {
@@ -91,14 +96,6 @@
           box-shadow:0px 0px 10px 3px #777777;
         }
         
-        .input_editable {
-          background: #FFFFFF;
-        }
-        
-        .input_uneditable {
-          background: #DDDDDD;
-        }
-        
         .message_row {
           margin-bottom: 2px;
           background: #eee;
@@ -147,7 +144,7 @@
           background: #fff;
         }
         .active {
-          background: #FF00FF;
+          background: cyan;
         }
         
         .important {

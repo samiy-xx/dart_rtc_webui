@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+  <body>
+    <element name="x-messageinput" constructor="MessageInput" extends="div">
+      <template>
+        {{ currentMessage }}
+        <style>
+          x-messageinput {
+            display: block;
+            border: 1px solid #666;
+            background: #ddd;
+            color: #000;
+          }
+          
+          .input_caninput {
+            background: #fff;
+          }
+          
+          .input_focused {
+            border: 1px solid cyan;
+          }
+          
+        </style>
+      </template>
+      <script type="application/dart" src="messageinput.dart"></script>
+    </element>
+  </body>
+</html>

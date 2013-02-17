@@ -1,4 +1,4 @@
-part of chatcomponent;
+part of components;
 
 class MessageType {
   static const MessageType MESSAGE = const MessageType("message");

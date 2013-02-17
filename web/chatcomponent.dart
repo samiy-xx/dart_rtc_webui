@@ -1,4 +1,3 @@
-library chatcomponent;
 
 import 'dart:html';
 import 'dart:async';
@@ -6,21 +5,18 @@ import 'package:web_ui/web_ui.dart';
 
 import 'package:dart_rtc_client/rtc_client.dart';
 import 'package:dart_rtc_common/rtc_common.dart';
+import 'components.dart';
 
-part 'messagetype.dart';
-part 'chatmessage.dart';
-part 'user.dart';
-part 'tabs.dart';
 
 class ChatComponent extends WebComponent {
   List<Tab> tabs = new List<Tab>();
   DivElement chat;
-  DivElement input;
+  Element input;
   String channel = "abc";
   String connectionstring = "";
   ChannelClient client;
   bool cansend = false;
-  //String activetab = "SYSTEM";
+  
   Tab activeTab;
   final String INPUT_EDITABLE = "input_editable";
   final String INPUT_UNEDITABLE = "input_uneditable";
@@ -31,7 +27,7 @@ class ChatComponent extends WebComponent {
     if (!tabExists(identifier)) {
       t = new Tab(identifier);
       tabs.add(t);
-      activeTab = t;
+      setActiveTab(t);
     } else {
       t = findTab(identifier);
     }
@@ -53,6 +49,7 @@ class ChatComponent extends WebComponent {
   }
 
   void inserted() {
+    //UnkownElement e;
     input = query("#chat_input");
     chat = query("#chat_messages");
     input.focus();
@@ -88,24 +85,39 @@ class ChatComponent extends WebComponent {
       cansend = false;
       setEditable(false);
       dispatch();
+      
       window.setTimeout(() {
         client.initialize();
       }, 10000);
     });
     
     client.onPacketEvent.listen((PacketEvent e) {
+      if (e.type == PacketType.CHANGENICK) {
+        ChangeNickCommand n = e.packet as ChangeNickCommand;
+        changeUserId(n.id, n.newId);
+      }
+      
       if (e.type == PacketType.CHANNELMESSAGE) {
         ChannelMessage cm = e.packet as ChannelMessage;
         add(cm.channelId, new ChatMessage(new DateTime.now(), MessageType.MESSAGE, cm.id, cm.message));
-      } 
+        Tab t = findTab(cm.channelId);
+        notifyTab(t);
+      }
+      
       else if (e.type == PacketType.CHANNEL) {
         ChannelPacket cp = e.packet as ChannelPacket;
         add(cp.channelId, createChannelMessage("Channel has ${cp.users} users and has a limit of ${cp.limit} concurrent users"));
+        Tab t = findTab(cp.channelId);
+        notifyTab(t);
       }
+      
       else if (e.type == PacketType.USERMESSAGE) {
         UserMessage um = e.packet as UserMessage;
         add(um.id, new ChatMessage(new DateTime.now(), MessageType.PRIVATE, um.id, um.message));
+        Tab t = findTab(um.id);
+        notifyTab(t);
       }
+      
       else if (e.type == PacketType.ID) {
         IdPacket id = e.packet as IdPacket;
         print("find channel with id ${id.channelId}");
@@ -124,6 +136,7 @@ class ChatComponent extends WebComponent {
           t.users.add(new User(join.id));
         add(join.channelId, createChannelMessage("${join.id} joins the channel"));
       }
+      
       else if (e.type == PacketType.BYE) {
         ByePacket bye = e.packet as ByePacket;
         
@@ -139,11 +152,7 @@ class ChatComponent extends WebComponent {
           
         }
         
-        //for (int i = 0; i < users.length; i++) {
-        //  User u = users[i];
-        //  if (u.name == bye.id)
-        //    users.removeAt(i);
-        //}
+        
       }
       dispatch();
     });
@@ -157,13 +166,26 @@ class ChatComponent extends WebComponent {
     
     DivElement i = e.target as DivElement;
     if (e.keyCode == 13) {
+      
       if (i.text.length == 0) {
         i.text = "";
         return;
       }
+      
       ChatEntry entry = new ChatEntry(i.text);
       if (entry.isCommand)  {
-        String command = entry.command;
+        ChatCommand command = entry.getCommand();
+        if (command is PrivMsgCommand) {
+          PrivMsgCommand c = command as PrivMsgCommand;
+          add(c.to, new ChatMessage(new DateTime.now(), MessageType.PRIVATE, "me", c.msg));
+          client.sendPeerUserMessage(c.to, c.msg);
+        } else if (command is NickCommand) {
+          NickCommand n = command as NickCommand;
+          add("SYSTEM", new ChatMessage(new DateTime.now(), MessageType.SYSTEM, "me", "Chaning nick"));
+          client.changeId(n.newNick);
+        } else {
+          
+        }
         add(activeTab.name, new ChatMessage(new DateTime.now(), MessageType.MESSAGE, "me", "Issuing command $command"));
       } else {
         add(activeTab.name, new ChatMessage(new DateTime.now(), MessageType.MESSAGE, "me", entry.toString()));
@@ -189,12 +211,24 @@ class ChatComponent extends WebComponent {
   void onSetTabActive(MouseEvent e) {
     Element el = e.target;
     Tab t = findTab(el.text);
-    if (t != null)
-      activeTab = t;
+    if (t != null) {
+      setActiveTab(t);
+    }
     //tabs.where((Tab t) => t.name == activeTab).first.
     dispatch();
   }
   
+  void setActiveTab(Tab t) {
+    tabs.forEach((Tab t) => t.isActive = false);
+    t.isActive = true;
+    t.hasUnread = false;
+    activeTab = t;
+  }
+  
+  void notifyTab(Tab t) {
+    if (t != activeTab)
+      t.hasUnread = true;
+  }
   /** Invoked when this component is removed from the DOM tree. */
   void removed() {
     print("Removed");
@@ -216,6 +250,10 @@ class ChatComponent extends WebComponent {
     return tabs.any((Tab t) => t.name == identifier);
   }
   
+  bool isActiveTab(Tab t) {
+    return activeTab == t;
+  }
+  
   Tab createTab(String name) {
     Tab t = new Tab(name);
     tabs.add(t);
@@ -231,6 +269,18 @@ class ChatComponent extends WebComponent {
     return null;
   }
   
+  void changeUserId(String o, String n) {
+    for (int i = 0; i < tabs.length; i++) {
+      Tab t = tabs[i];
+      for (int j = 0; j < t.users.length; j++) {
+        User u = t.users[j];
+        if (u.name == o) {
+          u.name = n;
+          add(t.name, createSystemMessage("User $o has changed nick to $n"));
+        }
+      }
+    }
+  }
   ChatMessage createChannelMessage(String m) {
     return new ChatMessage(new DateTime.now(), MessageType.CHANNEL, "CHANNEL", m);
   }

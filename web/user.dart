@@ -1,4 +1,4 @@
-part of chatcomponent;
+part of components;
 
 class User {
   String name;
