@@ -16,6 +16,7 @@ class ChatComponent extends WebComponent {
   String connectionstring = "";
   ChannelClient client;
   bool cansend = false;
+  String _myId;
   
   Tab activeTab;
   final String INPUT_EDITABLE = "input_editable";
@@ -26,6 +27,7 @@ class ChatComponent extends WebComponent {
     Tab t;
     if (!tabExists(identifier)) {
       t = new Tab(identifier);
+      t.users.add(new User(_myId));
       tabs.add(t);
       setActiveTab(t);
     } else {
@@ -64,6 +66,7 @@ class ChatComponent extends WebComponent {
     client.onInitializationStateChangeEvent.listen((InitializationStateEvent e) {
       
       if (e.state == InitializationState.REMOTE_READY) {
+        _myId = client.myId;
         client.joinChannel(channel);
       }
       
@@ -161,12 +164,13 @@ class ChatComponent extends WebComponent {
   }
   
   void onInputKeyDown(KeyboardEvent e) {
+    
     if (!cansend)
       return;
     
-    DivElement i = e.target as DivElement;
+    Element i = e.target;
+    
     if (e.keyCode == 13) {
-      
       if (i.text.length == 0) {
         i.text = "";
         return;
@@ -181,12 +185,12 @@ class ChatComponent extends WebComponent {
           client.sendPeerUserMessage(c.to, c.msg);
         } else if (command is NickCommand) {
           NickCommand n = command as NickCommand;
-          add("SYSTEM", new ChatMessage(new DateTime.now(), MessageType.SYSTEM, "me", "Chaning nick"));
+          add("SYSTEM", new ChatMessage(new DateTime.now(), MessageType.SYSTEM, "me", "Changing nick"));
           client.changeId(n.newNick);
         } else {
           
         }
-        add(activeTab.name, new ChatMessage(new DateTime.now(), MessageType.MESSAGE, "me", "Issuing command $command"));
+        
       } else {
         add(activeTab.name, new ChatMessage(new DateTime.now(), MessageType.MESSAGE, "me", entry.toString()));
         client.sendChannelMessage(entry.toString());

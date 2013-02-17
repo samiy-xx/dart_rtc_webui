@@ -3,14 +3,20 @@
 <html>
   <body>
     <element name="x-messageinput" constructor="MessageInput" extends="div">
-      <template>
-        {{ currentMessage }}
-        <style>
+      <template id="msg_rooot">
+        <div>{{ currentMessage }}</div>
+      <style>
           x-messageinput {
             display: block;
             border: 1px solid #666;
             background: #ddd;
             color: #000;
+            font-size: 25px;
+            padding: 5px;
+            margin-top: 10px;
+            -moz-box-shadow:0px 0px 10px 3px #777777;
+            -webkit-box-shadow:0px 0px 10px 3px #777777;
+            box-shadow:0px 0px 10px 3px #777777;
           }
           
           .input_caninput {
@@ -23,6 +29,7 @@
           
         </style>
       </template>
+      
       <script type="application/dart" src="messageinput.dart"></script>
     </element>
   </body>

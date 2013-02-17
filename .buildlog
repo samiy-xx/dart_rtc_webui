@@ -1099,3 +1099,470 @@ build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart
 
 build.dart finished [266 ms]
 
+---
+build.dart --machine --changed=pubspec.lock --changed=web\chatcomponent.dart --changed=web\chatcomponent.html -...
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 152 ms
+build.dart finished [286 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [138 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 112 ms
+build.dart finished [225 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [99 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart
+
+build.dart finished [109 ms]
+
+---
+build.dart --machine --changed=web\messageinput.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 112 ms
+build.dart finished [213 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [324 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 111 ms
+build.dart finished [207 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [90 ms]
+
+---
+build.dart --machine --changed=web\messageinput.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 106 ms
+build.dart finished [202 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [91 ms]
+
+---
+build.dart --machine --changed=web\messageinput.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 116 ms
+build.dart finished [212 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [114 ms]
+
+---
+build.dart --machine --changed=web\messageinput.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 106 ms
+build.dart finished [201 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [125 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 107 ms
+build.dart finished [202 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [90 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 120 ms
+build.dart finished [220 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [93 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 106 ms
+build.dart finished [209 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [96 ms]
+
+---
+build.dart --machine --changed=web\messageinput.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 110 ms
+build.dart finished [205 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [90 ms]
+
+---
+build.dart --machine --changed=web\messageinput.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 115 ms
+build.dart finished [210 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [92 ms]
+
+---
+build.dart --machine --changed=web\messageinput.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 105 ms
+build.dart finished [199 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [117 ms]
+
+---
+build.dart --machine --changed=web\messageinput.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 110 ms
+build.dart finished [206 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [90 ms]
+
+---
+build.dart --machine --changed=web\messageinput.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 104 ms
+build.dart finished [202 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [95 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 118 ms
+build.dart finished [217 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [126 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 104 ms
+build.dart finished [203 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [100 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 119 ms
+build.dart finished [213 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [94 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 114 ms
+build.dart finished [219 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [97 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 104 ms
+build.dart finished [199 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [113 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 105 ms
+build.dart finished [208 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [100 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 107 ms
+build.dart finished [201 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [118 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 109 ms
+build.dart finished [205 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [106 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 117 ms
+build.dart finished [216 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [95 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 105 ms
+build.dart finished [213 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [96 ms]
+
+---
+build.dart --machine --changed=web\messageinput.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 106 ms
+build.dart finished [201 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [96 ms]
+
+---
+build.dart --machine --changed=web\messageinput.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 110 ms
+build.dart finished [228 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [123 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.html --changed=web\messageinput.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 104 ms
+build.dart finished [218 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [96 ms]
+
+---
+build.dart --machine --changed=web\messageinput.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 108 ms
+build.dart finished [203 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [93 ms]
+
+---
+build.dart --machine --changed=web\messageinput.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 107 ms
+build.dart finished [208 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [91 ms]
+
+---
+build.dart --machine --changed=web\messageinput.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 106 ms
+build.dart finished [202 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [121 ms]
+
+---
+build.dart --machine --changed=web\messageinput.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 102 ms
+build.dart finished [198 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [92 ms]
+
+---
+build.dart --machine --changed=web\messageinput.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 111 ms
+build.dart finished [206 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [127 ms]
+
+---
+build.dart --machine --changed=web\messageinput.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 108 ms
+build.dart finished [205 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [90 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 122 ms
+build.dart finished [218 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [92 ms]
+
+---
+build.dart --machine --changed=web\messageinput.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 113 ms
+build.dart finished [211 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [139 ms]
+
+---
+build.dart --machine --changed=web\messageinput.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 112 ms
+build.dart finished [223 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [96 ms]
+
+---
+build.dart --machine --changed=web\messageinput.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 104 ms
+build.dart finished [205 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [93 ms]
+
+---
+build.dart --machine --changed=web\messageinput.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 106 ms
+build.dart finished [222 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [96 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 116 ms
+build.dart finished [211 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [92 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.html
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 104 ms
+build.dart finished [202 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [95 ms]
+
+---
+build.dart --machine --changed=web\chatcomponent.dart
+[{"method":"mapping","params":{"from":"web/dart_chat.html","to":"web/out/dart_chat.html"}}]
+Total time spent on web/dart_chat.html                       -- 112 ms
+build.dart finished [211 ms]
+
+---
+build.dart --machine --changed=web\out\chatcomponent.dart --changed=web\out\dart_chat.dart --changed=web\out\da...
+
+build.dart finished [106 ms]
+

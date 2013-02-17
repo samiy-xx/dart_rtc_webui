@@ -40,8 +40,11 @@
             </div>
           </div>
         </div>
+        <div id="chat_input" on-key-down="onInputKeyDown($event)"></div>
         
-        <x-messageinput id="chat_input" on-key-down="onInputKeyDown($event)"></x-messageinput>
+        <div style="clear: both"></div>
+        
+        
         
         <style>
         .chat_container {
@@ -58,15 +61,24 @@
         
         .container_left {
           width: auto;
-          overflow: hidden;
+          
+          height: 100%;
         }
         
         .container_right { 
           float: right;
           width: 200px;
+          height: 100%;
           border-left: 1px solid #000;
         }
-        
+        #chat_input {
+        -moz-box-shadow:0px 0px 10px 3px #777777;
+          -webkit-box-shadow:0px 0px 10px 3px #777777;
+          box-shadow:0px 0px 10px 3px #777777;
+          margin-top: 10px;
+          padding: 5px;
+          font-size:25px;
+        }
         #chat_users {
           height: 400px;
           padding: 3px;
@@ -87,14 +99,6 @@
           overflow:auto
         }
         
-        #chat_input {
-          border: 1px solid #000;
-          height:20px;
-          margin-top: 5px;
-          -moz-box-shadow:0px 0px 10px 3px #777777;
-          -webkit-box-shadow:0px 0px 10px 3px #777777;
-          box-shadow:0px 0px 10px 3px #777777;
-        }
         
         .message_row {
           margin-bottom: 2px;

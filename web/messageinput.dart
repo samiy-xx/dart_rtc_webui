@@ -9,7 +9,7 @@ class MessageInput extends WebComponent {
   Element _element;
   
   void created() {
-    _inputText = "bananas";
+    _inputText = "";
   }
   
   void inserted() {
